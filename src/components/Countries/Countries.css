@@ -1,0 +1,32 @@
+.countries {
+    border: 2px solid purple;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.country-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default for larger screens */
+    gap: 10px;
+}
+
+.visited{
+    background-color: aquamarine;
+}
+.flag-container img{
+    width: 100px;
+    gap: 20px;
+}
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .country-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 936px) {
+    .country-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
